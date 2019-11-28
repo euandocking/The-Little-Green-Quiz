@@ -1,0 +1,38 @@
+
+body
+{
+  background-image: url(forestIMG.png);
+  background-size: cover;
+  font-size: 2vw;
+}
+
+.grid-container
+{
+  margin: auto;
+  width: 55%;
+  height: auto;
+  background-color: #D3BDB0;
+  outline: 3px solid black;
+  margin-top: 120px;
+}
+
+#welcomeText
+{
+  width: auto;
+  height: auto;
+  padding: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.startButton
+{
+    text-align: center;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.paper-btn
+{
+  font-weight: bold;
+}
