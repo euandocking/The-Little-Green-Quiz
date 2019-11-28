@@ -1,23 +1,27 @@
+/*Written by Sameer Al Harbi
+Version 2, Nov 2019*/
 #mainBar {
   margin: auto;
   width: 350px;
   height: 350px;
   z-index: 10;
+  object-fit: contain;
+  position: relative;
 }
 
 #bar2 {
   width: 200px;
   height: 200px;
-  margin:auto;
+  margin: auto;
 }
 
 #bar3 {
   width: 200px;
   height: 200px;
-  margin:auto;
+  margin: auto;
 }
 
-.MainHeader{
+.MainHeader {
   object-fit: fill;
   margin: auto;
   position: absolute;
@@ -25,27 +29,20 @@
   height: 417px;
   background-image: url("forest.jpg");
   max-width: 1000px;
-
-
-}
-.mainBar{
-
-  object-fit: contain;
-  position: relative;
-
 }
 
 h1 {
   text-align: center;
-
-
+  color: #6D545D;
 }
+
 h3 {
-
+  color: #6D545D;
+  margin-top: 80px;
+  margin-left: 5px;
 }
 
-.container-fluid
-{
+.container-fluid {
   background-image: url("forest.jpg");
   background-repeat: no-repeat;
   margin: auto;
@@ -54,25 +51,27 @@ h3 {
   border: 3px solid white;
 }
 
-.container_plastic
-{
+.container_plastic {
   background-repeat: repeat-x;
-
 }
-p
-{
+
+p {
   padding: 30px;
-  color: #89937C;
+  color: white;
 }
-body
-{
-  background-color: #D3BDB0;
 
+body {
+  background-color: #8B9556;
 }
+
 .row {
   display: flex;
 }
 
 .column {
   flex: 50%;
+}
+
+.text-lead {
+  color: ;
 }
