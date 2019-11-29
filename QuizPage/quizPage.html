@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css">
+  <link rel="stylesheet" href="quiz.css">
+  <script type="text/javascript" src="quizScript.js"></script>
+  <title>The Little Green Quiz</title>
+</head>
+
+<body>
+  <div class="paper container">
+    <div class="row">
+      <div class="col-8 col">
+        <div class="progress margin-bottom">
+          <!–– replace w js ––>
+          <div class="bar success w-0"></div>
+        </div>
+      </div>
+    </div>
+
+      <div class="row flex-middle">
+        <div class="form-group">
+          <label for="paperInputs1">What is your name?</label>
+          <input type="text" placeholder="Name" alt="What is your name?" id="nameInput">
+          <!-- Just need a blank line here so that is the <br> -->
+          <br>
+          <button onclick="getName(nameInput.value)">Start</button>
+        </div>
+
+    </div>
+  </div>
+</body>
+</html>
