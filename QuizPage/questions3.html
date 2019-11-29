@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css">
+  <link rel="stylesheet" href="quiz.css">
+  <script type="text/javascript" src="quizScript.js"></script>
+  <title>The Little Green Quiz</title>
+</head>
+
+<body>
+  <div class="paper container">
+    <div class="row">
+      <div class="col sm-8">
+        Progress:
+        <div class="progress margin-bottom">
+            <div class="bar success w-94"></div>
+        </div>
+      </div>
+    </div>
+
+    <p>How much other trash do you throw away on a weekly basis (on average)?</p>
+
+    <div class="row flex-middle">
+      <div class="col sm-4">
+        <label class="input-block"><b>Other</b></label>
+      </div>
+      <div class="col sm-4">
+        <label class="input-block">How much do you throw away?</label>
+      </div>
+      <div class="col sm-4">
+        <label class="input-block">How much do you recycle?</label>
+      </div>
+      <!-- //////////////////////////////////////////Question//////////////////////////////////////////// -->
+      <div class="col sm-4">
+        <label class="input-block" for="others">How much other trash (in kg)? (Any you can think of)</label>
+      </div>
+      <div class="col sm-4">
+        <input class="input-block" type="text" placeholder="Kilograms thrown" alt="How much kilograms of any other types of thrash do you throw away?" id="othersThrown">
+      </div>
+      <div class="col sm-4">
+        <input class="input-block" type="text" placeholder="Kilograms recycled" alt="How much kilograms of any other types of thrash do you recycle?" id="othersRecycled">
+      </div>
+
+    </div>
+    <button onclick="goToResults()">Finish</button>
+  </div>
+
+</body>
+
+</html>

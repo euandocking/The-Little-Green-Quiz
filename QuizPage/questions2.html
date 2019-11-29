@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css">
+  <link rel="stylesheet" href="quiz.css">
+  <script type="text/javascript" src="quizScript.js"></script>
+  <title>The Little Green Quiz</title>
+</head>
+
+<body>
+  <div class="paper container">
+    <div class="row">
+      <div class="col sm-8">
+        Progress:
+        <div class="progress margin-bottom">
+            <div class="bar success w-50"></div>
+        </div>
+      </div>
+    </div>
+
+    <p>How much of these items do you throw away on a weekly basis (on average)?</p>
+
+    <div class="row flex-middle">
+      <div class="col sm-4">
+        <label class="input-block"><b>Metal</b></label>
+      </div>
+      <div class="col sm-4">
+        <label class="input-block">How many do you throw away?</label>
+      </div>
+      <div class="col sm-4">
+        <label class="input-block">How many do you recycle?</label>
+      </div>
+      <!-- //////////////////////////////////////////Question 1////////////////////////////////////////// -->
+      <div class="col sm-4">
+        <label class="input-block" for="cans">How many cans?</label>
+      </div>
+      <div class="col sm-4">
+        <input class="input-block" type="text" placeholder="Quantity thrown" alt="How many metal cans do you throw away?" id="cansThrown">
+      </div>
+      <div class="col sm-4">
+        <input class="input-block" type="text" placeholder="Quantity recycled" alt="How many metal cans do you recycle?" id="cansRecycled">
+      </div>
+      <!-- //////////////////////////////////////////Question 2////////////////////////////////////////// -->
+      <div class="col sm-4">
+        <label class="input-block" for="otherMetals">How much other metals (in kg)?</label>
+      </div>
+      <div class="col sm-4">
+        <input class="input-block" type="text" placeholder="Kilograms thrown" alt="How much kilograms of other metal trash do you throw away?" id="metalOtherThrown">
+      </div>
+      <div class="col sm-4">
+        <input class="input-block" type="text" placeholder="Kilograms recycled" alt="How much kilograms of other metal trash do you recycle?" id="metalOtherRecycled">
+      </div>
+      <!-- ////////////////////////////////////////////////////////////////////////////////////////////// -->
+      <div class="col sm-4">
+        <label class="input-block"><b>Food</b></label>
+      </div>
+      <div class="col sm-4">
+        <label class="input-block">How much do you throw away?</label>
+      </div>
+      <div class="col sm-4">
+        <label class="input-block">How much do you recycle?</label>
+      </div>
+      <!-- //////////////////////////////////////////Question 3////////////////////////////////////////// -->
+      <div class="col sm-4">
+        <label class="input-block" for="food">How much food (in kg)?</label>
+      </div>
+      <div class="col sm-4">
+        <input class="input-block" type="text" placeholder="Kilograms thrown" alt="How much kilograms of food waste do you throw away?" id="foodThrown">
+      </div>
+      <div class="col sm-4">
+        <input class="input-block" type="text" placeholder="Kilograms recycled" alt="How much kilograms of food waste do you recycle?" id="foodRecycled">
+      </div>
+      <!-- ////////////////////////////////////////////////////////////////////////////////////////////// -->
+      <div class="col sm-4">
+        <label class="input-block"><b>Paper</b></label>
+      </div>
+      <div class="col sm-4">
+        <label class="input-block">How much do you throw away?</label>
+      </div>
+      <div class="col sm-4">
+        <label class="input-block">How much do you recycle?</label>
+      </div>
+      <!-- //////////////////////////////////////////Question 4////////////////////////////////////////// -->
+      <div class="col sm-4">
+        <label class="input-block" for="paper">How much paper (in kg)?</label>
+      </div>
+      <div class="col sm-4">
+        <input class="input-block" type="text" placeholder="Kilograms thrown" alt="How much kilograms of paper do you throw away?" id="paperThrown">
+      </div>
+      <div class="col sm-4">
+        <input class="input-block" type="text" placeholder="Kilograms recycled" alt="How much kilograms of paper do you recycle?" id="paperRecycled">
+      </div>
+      <!-- ////////////////////////////////////////////////////////////////////////////////////////////// -->
+      <div class="col sm-4">
+        <label class="input-block"><b>Glass</b></label>
+      </div>
+      <div class="col sm-4">
+        <label class="input-block">How many do you throw away?</label>
+      </div>
+      <div class="col sm-4">
+        <label class="input-block">How many do you recycle?</label>
+      </div>
+      <!-- //////////////////////////////////////////Question 5////////////////////////////////////////// -->
+      <div class="col sm-4">
+        <label class="input-block" for="glassBottles">How many glass bottles?</label>
+      </div>
+      <div class="col sm-4">
+        <input class="input-block" type="text" placeholder="Quantity thrown" alt="How many glass bottles do you throw away?" id="glBottlesThrown">
+      </div>
+      <div class="col sm-4">
+        <input class="input-block" type="text" placeholder="Quantity recycled" alt="How many glass bottles do you recycle?" id="glBottlesRecycled">
+      </div>
+      <!-- //////////////////////////////////////////Question 6////////////////////////////////////////// -->
+      <div class="col sm-4">
+        <label class="input-block" for="jars">How many jars?</label>
+      </div>
+      <div class="col sm-4">
+        <input class="input-block" type="text" placeholder="Quantity thrown" alt="How many jars do you throw away?" id="jarsThrown">
+      </div>
+      <div class="col sm-4">
+        <input class="input-block" type="text" placeholder="Quantity recycled" alt="How many jars do you recycle?" id="jarsRecycled">
+      </div>
+      <!-- //////////////////////////////////////////Question 7////////////////////////////////////////// -->
+      <div class="col sm-4">
+        <label class="input-block" for="otherGlass">How much other glass (in kg)?</label>
+      </div>
+      <div class="col sm-4">
+        <input class="input-block" type="text" placeholder="Kilograms thrown" alt="How much kilograms of other glass trash do you throw away?" id="glassOtherThrown">
+      </div>
+      <div class="col sm-4">
+        <input class="input-block" type="text" placeholder="Kilograms recycled" alt="How much kilograms of other glass trash do you recycle?" id="glassOtherRecycled">
+      </div>
+
+    </div>
+    <button onclick="finalQestion()">Next</button>
+  </div>
+
+</body>
+
+</html>
