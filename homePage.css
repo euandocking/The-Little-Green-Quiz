@@ -1,8 +1,13 @@
+html {
+  height: 100%;
+}
 
 body
 {
   background-image: url(forestIMG.png);
+  background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
   font-size: 2vw;
 }
 
