@@ -8,8 +8,8 @@ var value3=0;
 var bar2Color='#EFBC9B';
 var bar3Color='#EFBC9B'
 
-var weightInKilo=window.localStorage.totalWaste;
-var totalRecycled=window.localStorage.totalRecycled;
+var weightInKilo=window.localStorage.totalWaste*52;
+var totalRecycled=window.localStorage.totalRecycled*52;
 var percentageRecycled;
 
 var averageRecycleRate=0.355;
