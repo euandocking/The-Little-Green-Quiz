@@ -90,8 +90,8 @@ bar3.animate(value3);
 bar2.animate(value2);
 bar.animate(value1); // Number from 0.0 to 1.0
 bar.setText(value1*100+"%");
-bar2.setText(value2*100+"%");
-bar3.setText(value3*100+"%");
+bar2.setText(value2*100);
+bar3.setText(value3*100);
 
 bar.text.style.fontSize = '6rem';
 bar.text.style.color = "#EFBC9B";
