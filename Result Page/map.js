@@ -121,8 +121,8 @@ function initMap() {
   map.data.addListener('click', function(event) {
     var feature = event.feature;
     var content = ('<h3 class="infoWindow">' + feature.getProperty("name") + '</h3>' +
-      '<p>' + feature.getProperty("description") + '</p>' +
-      '<p>' + feature.getProperty("address") + '</p>'
+      '<p class="infoWindow">' + feature.getProperty("description") + '</p>' +
+      '<p class="infoWindow">' + feature.getProperty("address") + '</p>'
     );
 
     infoWindow.setContent(content);
