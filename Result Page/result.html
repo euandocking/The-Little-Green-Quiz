@@ -10,6 +10,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="master.css">
   <link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css">
+  <link rel="stylesheet" href="map.css">
   <script src="ProgressBar.js"></script>
 </head>
 <!--Header-->
@@ -108,8 +109,15 @@
     </div>
   </div>
 
+  <h3>Zero Waste Locations - Dundee</h3>
+  <div id="map"></div>
+
   <!--Scripts-->
+  <script src="map.js" charset="utf-8"></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkEksDZUqiJX9u21tgEdlszkcszlByOig&callback=initMap">
+ </script>
   <script src="scripts.js"></script>
 </body>
 
 </html>
+
