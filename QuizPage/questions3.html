@@ -7,7 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css">
   <link rel="stylesheet" href="quiz.css">
-  <script type="text/javascript" src="quizScript.js"></script>
   <title>The Little Green Quiz</title>
 </head>
 
@@ -25,29 +24,34 @@
     <p>How much other trash do you throw away on a weekly basis (on average)?</p>
 
     <div class="row flex-middle">
-      <div class="col sm-4">
+      <div class="col sm-8">
         <label class="input-block"><b>Other</b></label>
       </div>
-      <div class="col sm-4">
-        <label class="input-block">How much do you throw away?</label>
-      </div>
-      <div class="col sm-4">
-        <label class="input-block">How much do you recycle?</label>
-      </div>
       <!-- //////////////////////////////////////////Question//////////////////////////////////////////// -->
-      <div class="col sm-4">
-        <label class="input-block" for="others">How much other trash (in kg)? (Any you can think of)</label>
+      <div class="col sm-6">
+        <label class="input-block">How much other trash (in kg) do you throw away (Any you can think of)?</label>
+        <div class="slidecontainer">
+          <input type="range" min="0" max="100" value="0" class="slider" alt="How much kilograms of any other types of thrash do you throw away?" id="othersThrown">
+          <span>Value: </span><span id="print-othersThrown">0</span>
+        </div>
       </div>
-      <div class="col sm-4">
-        <input class="input-block" type="text" placeholder="Kilograms thrown" alt="How much kilograms of any other types of thrash do you throw away?" id="othersThrown">
+      <div class="col sm-6">
+        <label class="input-block">How much other trash (in kg) do you recycle? (Any you can think of)</label>
+        <div class="slidecontainer">
+          <input type="range" min="0" max="100" value="0" class="slider" alt="How much kilograms of any other types of thrash do you recycle?" id="othersRecycled">
+          <span>Value: </span><span id="print-othersRecycled">0</span>
+        </div>
       </div>
-      <div class="col sm-4">
-        <input class="input-block" type="text" placeholder="Kilograms recycled" alt="How much kilograms of any other types of thrash do you recycle?" id="othersRecycled">
-      </div>
-
+      
     </div>
+
     <button onclick="goToResults()">Finish</button>
+
   </div>
+
+    <script type="text/javascript" src="quizScript.js"></script>
+    <script type="text/javascript" src="sliders3.js"></script>
+
 
 </body>
 
