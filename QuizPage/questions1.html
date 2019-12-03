@@ -7,7 +7,6 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://unpkg.com/papercss@1.6.1/dist/paper.min.css">
   <link rel="stylesheet" href="quiz.css">
-  <script type="text/javascript" src="quizScript.js"></script>
   <title>The Little Green Quiz</title>
 </head>
 
@@ -17,7 +16,7 @@
       <div class="col sm-8">
         Progress:
         <div class="progress margin-bottom">
-            <div class="bar success w-6"></div>
+          <div class="bar success w-6"></div>
         </div>
       </div>
     </div>
@@ -25,89 +24,121 @@
     <p>How much of these items do you throw away on a weekly basis (on average)?</p>
 
     <div class="row flex-middle">
-      <div class="col sm-4">
+      <div class="col sm-8">
         <label class="input-block"><b>Plastic</b></label>
       </div>
-      <div class="col sm-4">
-        <label class="input-block">How many do you throw away?</label>
-      </div>
-      <div class="col sm-4">
-        <label class="input-block">How many do you recycle?</label>
-      </div>
       <!-- //////////////////////////////////////////Question 1////////////////////////////////////////// -->
-      <div class="col sm-4">
-        <label class="input-block" for="bags">How many bags?</label>
+      <div class="col sm-6">
+        <label class="input-block">How many bags do you throw away?</label>
+        <div class="slidecontainer">
+          <input type="range" min="0" max="100" value="0" class="slider" alt="How many plastic bags do you throw away?" id="bagsThrown">
+          <span>Value: </span><span id="print-bagsThrown">0</span>
+        </div>
       </div>
-      <div class="col sm-4">
-        <input class="input-block" type="text" placeholder="Quantity thrown" alt="How many plastic bags do you throw away?" id="bagsThrown">
-      </div>
-      <div class="col sm-4">
-        <input class="input-block" type="text" placeholder="Quantity recycled" alt="How many plastic bags do you recycle?" id="bagsRecycled">
+      <div class="col sm-6">
+        <label class="input-block">How many bags do you recycle?</label>
+        <div class="slidecontainer">
+          <input type="range" min="0" max="100" value="0" class="slider" alt="How many plastic bags do you recycle?" id="bagsRecycled">
+          <span>Value: </span><span id="print-bagsRecycled">0</span>
+        </div>
       </div>
       <!-- //////////////////////////////////////////Question 2////////////////////////////////////////// -->
-      <div class="col sm-4">
-        <label class="input-block" for="cups">How many cups?</label>
+      <div class="col sm-6">
+        <label class="input-block">How many cups do you throw away?</label>
+        <div class="slidecontainer">
+          <input type="range" min="0" max="100" value="0" class="slider" alt="How many plastic cups do you throw away?" id="cupsThrown">
+        </div>
+        <span>Value: </span><span id="print-cupsThrown">0</span>
       </div>
-      <div class="col sm-4">
-        <input class="input-block" type="text" placeholder="Quantity thrown" alt="How many plastic cups do you throw away?" id="cupsThrown">
-      </div>
-      <div class="col sm-4">
-        <input class="input-block" type="text" placeholder="Quantity recycled" alt="How many plastic cups do you recycle?" id="cupsRecycled">
+      <div class="col sm-6">
+        <label class="input-block">How many cups do you recycle?</label>
+        <div class="slidecontainer">
+          <input type="range" min="0" max="100" value="0" class="slider" alt="How many plastic cups do you recycle?" id="cupsRecycled">
+        </div>
+        <span>Value: </span><span id="print-cupsRecycled">0</span>
       </div>
       <!-- //////////////////////////////////////////Question 3////////////////////////////////////////// -->
-      <div class="col sm-4">
-        <label class="input-block" for="straws">How many straws?</label>
+      <div class="col sm-6">
+        <label class="input-block">How many straws do you throw away?</label>
+        <div class="slidecontainer">
+          <input type="range" min="0" max="100" value="0" class="slider" alt="How many straws do you throw away?" id="strawsThrown">
+        </div>
+        <span>Value: </span><span id="print-strawsThrown">0</span>
       </div>
-      <div class="col sm-4">
-        <input class="input-block" type="text" placeholder="Quantity thrown" alt="How many straws do you throw away?" id="strawsThrown">
-      </div>
-      <div class="col sm-4">
-        <input class="input-block" type="text" placeholder="Quantity recycled" alt="How many straws do you recycle?" id="strawsRecycled">
+      <div class="col sm-6">
+        <label class="input-block">How many straws do you recycle?</label>
+        <div class="slidecontainer">
+          <input type="range" min="0" max="100" value="0" class="slider" alt="How many straws do you recycle?" id="strawsRecycled">
+        </div>
+        <span>Value: </span><span id="print-strawsRecycled">0</span>
       </div>
       <!-- //////////////////////////////////////////Question 4////////////////////////////////////////// -->
-      <div class="col sm-4">
-        <label class="input-block" for="plasticBottles">How many plastic bottles?</label>
+      <div class="col sm-6">
+        <label class="input-block">How many plastic bottles do you throw away?</label>
+        <div class="slidecontainer">
+          <input type="range" min="0" max="100" value="0" class="slider" alt="How many plastic bottles do you throw away?" id="plBottlesThrown">
+        </div>
+        <span>Value: </span><span id="print-plBottlesThrown">0</span>
       </div>
-      <div class="col sm-4">
-        <input class="input-block" type="text" placeholder="Quantity thrown" alt="How many plastic bottles do you throw away?" id="plBottlesThrown">
-      </div>
-      <div class="col sm-4">
-        <input class="input-block" type="text" placeholder="Quantity recycled" alt="How many plastic bottles do you recycle?" id="plBottlesRecycled">
+      <div class="col sm-6">
+        <label class="input-block">How many plastic bottles do you recycle?</label>
+        <div class="slidecontainer">
+          <input type="range" min="0" max="100" value="0" class="slider" alt="How many plastic bottles do you recycle?" id="plBottlesRecycled">
+        </div>
+        <span>Value: </span><span id="print-plBottlesRecycled">0</span>
       </div>
       <!-- //////////////////////////////////////////Question 5////////////////////////////////////////// -->
-      <div class="col sm-4">
-        <label class="input-block" for="containers">How many containers?</label>
+      <div class="col sm-6">
+        <label class="input-block">How many plastic containers do you throw away?</label>
+        <div class="slidecontainer">
+          <input type="range" min="0" max="100" value="0" class="slider" alt="How many plastic containers do you throw away?" id="containersThrown">
+        </div>
+        <span>Value: </span><span id="print-containersThrown">0</span>
       </div>
-      <div class="col sm-4">
-        <input class="input-block" type="text" placeholder="Quantity thrown" alt="How many plastic containers do you throw away?" id="containersThrown">
-      </div>
-      <div class="col sm-4">
-        <input class="input-block" type="text" placeholder="Quantity recycled" alt="How many plastic containers do you recycle?" id="containersRecycled">
+      <div class="col sm-6">
+        <label class="input-block">How many plastic containers do you recycle?</label>
+        <div class="slidecontainer">
+          <input type="range" min="0" max="100" value="0" class="slider" alt="How many plastic containers do you recycle?" id="containersRecycled">
+        </div>
+        <span>Value: </span><span id="print-containersRecycled">0</span>
       </div>
       <!-- //////////////////////////////////////////Question 6////////////////////////////////////////// -->
-      <div class="col sm-4">
-        <label class="input-block" for="cutlery">How many cutlery items?</label>
+      <div class="col sm-6">
+        <label class="input-block">How many plastic cutlery do you throw away?</label>
+        <div class="slidecontainer">
+          <input type="range" min="0" max="100" value="0" class="slider" alt="How many plastic cutlery do you throw away?" id="cutleryThrown">
+        </div>
+        <span>Value: </span><span id="print-cutleryThrown">0</span>
       </div>
-      <div class="col sm-4">
-        <input class="input-block" type="text" placeholder="Quantity thrown" alt="How many plastic cutlery items do you throw away?" id="cutleryThrown">
-      </div>
-      <div class="col sm-4">
-        <input class="input-block" type="text" placeholder="Quantity recycled" alt="How many plastic cutlery items do you recycle?" id="cutleryRecycled">
+      <div class="col sm-6">
+        <label class="input-block">How many plastic cutlery do you recycle?</label>
+        <div class="slidecontainer">
+          <input type="range" min="0" max="100" value="0" class="slider" alt="How many plastic cutlery do you recycle?" id="cutleryRecycled">
+        </div>
+        <span>Value: </span><span id="print-cutleryRecycled">0</span>
       </div>
       <!-- //////////////////////////////////////////Question 7////////////////////////////////////////// -->
-      <div class="col sm-4">
-        <label class="input-block" for="otherPlastic">How much other plastics (in kg)?</label>
+      <div class="col sm-6">
+        <label class="input-block">How much other plastics (in kg) do you throw away?</label>
+        <div class="slidecontainer">
+          <input type="range" min="0" max="100" value="0" class="slider" alt="How much kilograms of other plastic trash do you throw away?" id="plasticOtherThrown">
+        </div>
+        <span>Value: </span><span id="print-plasticOtherThrown">0</span>
       </div>
-      <div class="col sm-4">
-        <input class="input-block" type="text" placeholder="Kilograms thrown" alt="How much kilograms of other plastic trash do you throw away?" id="plasticOtherThrown">
-      </div>
-      <div class="col sm-4">
-        <input class="input-block" type="text" placeholder="Kilograms recycled" alt="How much kilograms of other plastic trash do you recycle?" id="plasticOtherRecycled">
+      <div class="col sm-6">
+        <label class="input-block">How much other plastics (in kg) do you recycle?</label>
+        <div class="slidecontainer">
+          <input type="range" min="0" max="100" value="0" class="slider" alt="How much kilograms of other plastic trash do you recycle?" id="plasticOtherRecycled">
+        </div>
+        <span>Value: </span><span id="print-plasticOtherRecycled">0</span>
       </div>
 
     </div>
     <button onclick="nextQuestions()">Next</button>
   </div>
+
+  <script type="text/javascript" src="quizScript.js"></script>
+  <script type="text/javascript" src="sliders1.js"></script>
 
 </body>
 
