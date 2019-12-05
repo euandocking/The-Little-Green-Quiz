@@ -30,6 +30,11 @@ body
   text-align: center;
 }
 
+#welcomeText p
+{
+  font-size: 25px;
+}
+
 .startButton
 {
     text-align: center;
